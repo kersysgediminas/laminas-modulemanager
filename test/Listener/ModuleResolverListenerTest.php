@@ -27,6 +27,7 @@ class ModuleResolverListenerTest extends AbstractListenerTestCase
         self::assertInstanceOf($expectedInstanceOf, $moduleResolver($e));
     }
 
+    /** @psalm-return array<string, array<int, string>> */
     public static function validModuleNameProvider(): array
     {
         return [
